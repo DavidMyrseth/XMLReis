@@ -1,0 +1,13 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<main>
+    <h1>XML katsetamine: Elizaveta II sugupuu</h1>
+    <div class="row">
+        @* Render the HTML string from the PageModel without encoding it *@
+        @Html.Raw(Model.TransformedXml)
+    </div>
+</main>

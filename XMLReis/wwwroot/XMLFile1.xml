@@ -1,0 +1,461 @@
+﻿<reisid>
+	<ReisDB id="1">
+		<terminal transport="US-LA">Lakefront Airport</terminal>
+		<Total_value>30</Total_value>
+		<info>
+			<sihtkoht>Brazil</sihtkoht>
+			<algus>2025-03-21T00:00:00</algus>
+			<lopp>2025-09-06T00:00:00</lopp>
+		</info>
+	</ReisDB>
+	<ReisDB id="2">
+		<terminal transport="SN-KD">Kolda North Airport</terminal>
+		<Total_value>2</Total_value>
+		<info>
+			<sihtkoht>Australia</sihtkoht>
+			<algus>2025-02-15T00:00:00</algus>
+			<lopp>2025-05-28T00:00:00</lopp>
+		</info>
+	</ReisDB>
+	<ReisDB id="3">
+		<terminal transport="MG-M">Avaratra Airport</terminal>
+		<Total_value>35</Total_value>
+		<info>
+			<sihtkoht>Australia</sihtkoht>
+			<algus>2025-07-26T00:00:00</algus>
+			<lopp>2025-07-18T00:00:00</lopp>
+		</info>
+	</ReisDB>
+	<ReisDB id="4">
+		<terminal transport="US-AK">West Point Village Seaplane Base</terminal>
+		<Total_value>1</Total_value>
+		<info>
+			<sihtkoht>South Korea</sihtkoht>
+			<algus>2024-12-05T00:00:00</algus>
+			<lopp>2025-04-03T00:00:00</lopp>
+		</info>
+	</ReisDB>
+	<ReisDB id="5">
+		<terminal transport="PG-MPL">Aseki Airport</terminal>
+		<Total_value>8</Total_value>
+		<info>
+			<sihtkoht>USA</sihtkoht>
+			<algus>2025-05-12T00:00:00</algus>
+			<lopp>2024-11-19T00:00:00</lopp>
+		</info>
+	</ReisDB>
+	<ReisDB id="6">
+		<terminal transport="FR-H">Ajaccio-Napoléon Bonaparte Airport</terminal>
+		<Total_value>3</Total_value>
+		<info>
+			<sihtkoht>USA</sihtkoht>
+			<algus>2025-09-04T00:00:00</algus>
+			<lopp>2024-10-20T00:00:00</lopp>
+		</info>
+	</ReisDB>
+	<ReisDB id="7">
+		<terminal transport="US-NC">Seymour Johnson Air Force Base</terminal>
+		<Total_value>4</Total_value>
+		<info>
+			<sihtkoht>Australia</sihtkoht>
+			<algus>2025-01-13T00:00:00</algus>
+			<lopp>2025-06-09T00:00:00</lopp>
+		</info>
+	</ReisDB>
+	<ReisDB id="8">
+		<terminal transport="JP-01">Wakkanai Airport</terminal>
+		<Total_value>3</Total_value>
+		<info>
+			<sihtkoht>France</sihtkoht>
+			<algus>2025-05-06T00:00:00</algus>
+			<lopp>2025-04-16T00:00:00</lopp>
+		</info>
+	</ReisDB>
+	<ReisDB id="9">
+		<terminal transport="AR-Z">Lago Argentino Airport</terminal>
+		<Total_value>4</Total_value>
+		<info>
+			<sihtkoht>China</sihtkoht>
+			<algus>2025-02-10T00:00:00</algus>
+			<lopp>2025-03-26T00:00:00</lopp>
+		</info>
+	</ReisDB>
+	<ReisDB id="10">
+		<terminal transport="OM-MU">Dibba Airport</terminal>
+		<Total_value>40</Total_value>
+		<info>
+			<sihtkoht>France</sihtkoht>
+			<algus>2025-06-30T00:00:00</algus>
+			<lopp>2025-01-20T00:00:00</lopp>
+		</info>
+	</ReisDB>
+	<ReisDB id="11">
+		<terminal transport="US-WI">Wittman Regional Airport</terminal>
+		<Total_value>11</Total_value>
+		<info>
+			<sihtkoht>USA</sihtkoht>
+			<algus>2025-08-15T00:00:00</algus>
+			<lopp>2025-09-20T00:00:00</lopp>
+		</info>
+	</ReisDB>
+	<ReisDB id="12">
+		<terminal transport="US-AR">Memorial Field</terminal>
+		<Total_value>6</Total_value>
+		<info>
+			<sihtkoht>Peru</sihtkoht>
+			<algus>2025-09-10T00:00:00</algus>
+			<lopp>2025-01-25T00:00:00</lopp>
+		</info>
+	</ReisDB>
+	<ReisDB id="13">
+		<terminal transport="RU-KDA">Gelendzhik Airport</terminal>
+		<Total_value>13</Total_value>
+		<info>
+			<sihtkoht>Thailand</sihtkoht>
+			<algus>2024-12-12T00:00:00</algus>
+			<lopp>2025-07-05T00:00:00</lopp>
+		</info>
+	</ReisDB>
+	<ReisDB id="14">
+		<terminal transport="EG-C">Cairo International Airport</terminal>
+		<Total_value>25</Total_value>
+		<info>
+			<sihtkoht>France</sihtkoht>
+			<algus>2024-10-26T00:00:00</algus>
+			<lopp>2024-12-26T00:00:00</lopp>
+		</info>
+	</ReisDB>
+	<ReisDB id="15">
+		<terminal transport="US-AK">Girdwood Airport</terminal>
+		<Total_value>3</Total_value>
+		<info>
+			<sihtkoht>Argentina</sihtkoht>
+			<algus>2024-10-22T00:00:00</algus>
+			<lopp>2024-10-15T00:00:00</lopp>
+		</info>
+	</ReisDB>
+	<ReisDB id="16">
+		<terminal transport="CA-YT">Watson Lake Airport</terminal>
+		<Total_value>3</Total_value>
+		<info>
+			<sihtkoht>USA</sihtkoht>
+			<algus>2024-10-09T00:00:00</algus>
+			<lopp>2025-02-22T00:00:00</lopp>
+		</info>
+	</ReisDB>
+	<ReisDB id="17">
+		<terminal transport="BR-PA">Ourilândia do Norte Airport</terminal>
+		<Total_value>50</Total_value>
+		<info>
+			<sihtkoht>India</sihtkoht>
+			<algus>2025-07-12T00:00:00</algus>
+			<lopp>2025-07-03T00:00:00</lopp>
+		</info>
+	</ReisDB>
+	<ReisDB id="18">
+		<terminal transport="US-PA">Harrisburg International Airport</terminal>
+		<Total_value>19</Total_value>
+		<info>
+			<sihtkoht>USA</sihtkoht>
+			<algus>2025-01-04T00:00:00</algus>
+			<lopp>2025-03-30T00:00:00</lopp>
+		</info>
+	</ReisDB>
+	<ReisDB id="19">
+		<terminal transport="CA-BC">Bella Bella/Shearwater Seaplane Base</terminal>
+		<Total_value>36</Total_value>
+		<info>
+			<sihtkoht>USA</sihtkoht>
+			<algus>2025-04-19T00:00:00</algus>
+			<lopp>2025-05-28T00:00:00</lopp>
+		</info>
+	</ReisDB>
+	<ReisDB id="20">
+		<terminal transport="BR-AM">Ponta Pelada Airport</terminal>
+		<Total_value>2</Total_value>
+		<info>
+			<sihtkoht>Japan</sihtkoht>
+			<algus>2025-04-03T00:00:00</algus>
+			<lopp>2025-02-08T00:00:00</lopp>
+		</info>
+	</ReisDB>
+	<ReisDB id="21">
+		<terminal transport="BF-SEN">Sebba Airport</terminal>
+		<Total_value>90</Total_value>
+		<info>
+			<sihtkoht>Qatar</sihtkoht>
+			<algus>2025-05-02T00:00:00</algus>
+			<lopp>2024-10-23T00:00:00</lopp>
+		</info>
+	</ReisDB>
+	<ReisDB id="22">
+		<terminal transport="US-MN">St Paul Downtown Holman Field</terminal>
+		<Total_value>90</Total_value>
+		<info>
+			<sihtkoht>France</sihtkoht>
+			<algus>2025-07-16T00:00:00</algus>
+			<lopp>2025-09-16T00:00:00</lopp>
+		</info>
+	</ReisDB>
+	<ReisDB id="23">
+		<terminal transport="RO-TL">Tulcea Airport</terminal>
+		<Total_value>20</Total_value>
+		<info>
+			<sihtkoht>Germany</sihtkoht>
+			<algus>2025-09-12T00:00:00</algus>
+			<lopp>2024-11-30T00:00:00</lopp>
+		</info>
+	</ReisDB>
+	<ReisDB id="24">
+		<terminal transport="CD-BN">Inongo Airport</terminal>
+		<Total_value>6</Total_value>
+		<info>
+			<sihtkoht>Germany</sihtkoht>
+			<algus>2025-02-05T00:00:00</algus>
+			<lopp>2024-11-26T00:00:00</lopp>
+		</info>
+	</ReisDB>
+	<ReisDB id="25">
+		<terminal transport="US-KS">Chanute Martin Johnson Airport</terminal>
+		<Total_value>2</Total_value>
+		<info>
+			<sihtkoht>USA</sihtkoht>
+			<algus>2025-01-21T00:00:00</algus>
+			<lopp>2025-01-17T00:00:00</lopp>
+		</info>
+	</ReisDB>
+	<ReisDB id="26">
+		<terminal transport="ZA-NP">Malamala Airport</terminal>
+		<Total_value>20</Total_value>
+		<info>
+			<sihtkoht>Qatar</sihtkoht>
+			<algus>2025-07-16T00:00:00</algus>
+			<lopp>2025-06-13T00:00:00</lopp>
+		</info>
+	</ReisDB>
+	<ReisDB id="27">
+		<terminal transport="TH-58">Mae Hong Son Airport</terminal>
+		<Total_value>30</Total_value>
+		<info>
+			<sihtkoht>Singapore</sihtkoht>
+			<algus>2024-12-03T00:00:00</algus>
+			<lopp>2024-11-01T00:00:00</lopp>
+		</info>
+	</ReisDB>
+	<ReisDB id="28">
+		<terminal transport="AU-QLD">Collinsville Airport</terminal>
+		<Total_value>5</Total_value>
+		<info>
+			<sihtkoht>USA</sihtkoht>
+			<algus>2025-07-22T00:00:00</algus>
+			<lopp>2025-09-19T00:00:00</lopp>
+		</info>
+	</ReisDB>
+	<ReisDB id="29">
+		<terminal transport="IR-27">Kalaleh Airport</terminal>
+		<Total_value>15</Total_value>
+		<info>
+			<sihtkoht>USA</sihtkoht>
+			<algus>2025-09-03T00:00:00</algus>
+			<lopp>2025-07-06T00:00:00</lopp>
+		</info>
+	</ReisDB>
+	<ReisDB id="30">
+		<terminal transport="MZ-I">Inhambane Airport</terminal>
+		<Total_value>20</Total_value>
+		<info>
+			<sihtkoht>France</sihtkoht>
+			<algus>2024-11-09T00:00:00</algus>
+			<lopp>2024-10-11T00:00:00</lopp>
+		</info>
+	</ReisDB>
+	<ReisDB id="31">
+		<terminal transport="AR-U">D. Casimiro Szlapelis Airport</terminal>
+		<Total_value>2</Total_value>
+		<info>
+			<sihtkoht>France</sihtkoht>
+			<algus>2024-10-04T00:00:00</algus>
+			<lopp>2025-03-19T00:00:00</lopp>
+		</info>
+	</ReisDB>
+	<ReisDB id="32">
+		<terminal transport="US-OH">Casement Airport</terminal>
+		<Total_value>3</Total_value>
+		<info>
+			<sihtkoht>USA</sihtkoht>
+			<algus>2024-12-11T00:00:00</algus>
+			<lopp>2025-04-01T00:00:00</lopp>
+		</info>
+	</ReisDB>
+	<ReisDB id="33">
+		<terminal transport="DZ-47">Noumérat - Moufdi Zakaria Airport</terminal>
+		<Total_value>90</Total_value>
+		<info>
+			<sihtkoht>USA</sihtkoht>
+			<algus>2024-11-14T00:00:00</algus>
+			<lopp>2024-11-07T00:00:00</lopp>
+		</info>
+	</ReisDB>
+	<ReisDB id="34">
+		<terminal transport="US-MS">Keesler Air Force Base</terminal>
+		<Total_value>3</Total_value>
+		<info>
+			<sihtkoht>USA</sihtkoht>
+			<algus>2025-07-05T00:00:00</algus>
+			<lopp>2025-01-11T00:00:00</lopp>
+		</info>
+	</ReisDB>
+	<ReisDB id="35">
+		<terminal transport="CD-EQ">Kotakoli Airport</terminal>
+		<Total_value>2</Total_value>
+		<info>
+			<sihtkoht>Ethiopia</sihtkoht>
+			<algus>2025-07-24T00:00:00</algus>
+			<lopp>2024-11-22T00:00:00</lopp>
+		</info>
+	</ReisDB>
+	<ReisDB id="36">
+		<terminal transport="BF-SIS">Leo Airport</terminal>
+		<Total_value>4</Total_value>
+		<info>
+			<sihtkoht>Peru</sihtkoht>
+			<algus>2025-07-22T00:00:00</algus>
+			<lopp>2025-03-07T00:00:00</lopp>
+		</info>
+	</ReisDB>
+	<ReisDB id="37">
+		<terminal transport="US-KY">Capital City Airport</terminal>
+		<Total_value>60</Total_value>
+		<info>
+			<sihtkoht>USA</sihtkoht>
+			<algus>2025-05-02T00:00:00</algus>
+			<lopp>2025-03-11T00:00:00</lopp>
+		</info>
+	</ReisDB>
+	<ReisDB id="38">
+		<terminal transport="PR-U-A">Luis Munoz Marin International Airport</terminal>
+		<Total_value>130</Total_value>
+		<info>
+			<sihtkoht>USA</sihtkoht>
+			<algus>2025-02-08T00:00:00</algus>
+			<lopp>2024-12-30T00:00:00</lopp>
+		</info>
+	</ReisDB>
+	<ReisDB id="39">
+		<terminal transport="CZ-JM">Brno-Turany Airport</terminal>
+		<Total_value>20</Total_value>
+		<info>
+			<sihtkoht>Australia</sihtkoht>
+			<algus>2025-02-01T00:00:00</algus>
+			<lopp>2025-04-19T00:00:00</lopp>
+		</info>
+	</ReisDB>
+	<ReisDB id="40">
+		<terminal transport="JP-01">New Chitose Airport</terminal>
+		<Total_value>90</Total_value>
+		<info>
+			<sihtkoht>UAE</sihtkoht>
+			<algus>2024-12-05T00:00:00</algus>
+			<lopp>2025-07-19T00:00:00</lopp>
+		</info>
+	</ReisDB>
+	<ReisDB id="41">
+		<terminal transport="IR-02">Urmia Airport</terminal>
+		<Total_value>30</Total_value>
+		<info>
+			<sihtkoht>Egypt</sihtkoht>
+			<algus>2025-08-12T00:00:00</algus>
+			<lopp>2025-04-08T00:00:00</lopp>
+		</info>
+	</ReisDB>
+	<ReisDB id="42">
+		<terminal transport="ES-CN">La Palma Airport</terminal>
+		<Total_value>25</Total_value>
+		<info>
+			<sihtkoht>Ethiopia</sihtkoht>
+			<algus>2024-12-12T00:00:00</algus>
+			<lopp>2024-10-26T00:00:00</lopp>
+		</info>
+	</ReisDB>
+	<ReisDB id="43">
+		<terminal transport="SE-H">Västervik Airport</terminal>
+		<Total_value>30</Total_value>
+		<info>
+			<sihtkoht>Italy</sihtkoht>
+			<algus>2025-07-06T00:00:00</algus>
+			<lopp>2025-01-22T00:00:00</lopp>
+		</info>
+	</ReisDB>
+	<ReisDB id="44">
+		<terminal transport="RU-KYA">Igarka Airport</terminal>
+		<Total_value>3</Total_value>
+		<info>
+			<sihtkoht>India</sihtkoht>
+			<algus>2025-06-10T00:00:00</algus>
+			<lopp>2025-08-15T00:00:00</lopp>
+		</info>
+	</ReisDB>
+	<ReisDB id="45">
+		<terminal transport="FI-OL">Oulu Airport</terminal>
+		<Total_value>30</Total_value>
+		<info>
+			<sihtkoht>USA</sihtkoht>
+			<algus>2025-02-21T00:00:00</algus>
+			<lopp>2024-11-13T00:00:00</lopp>
+		</info>
+	</ReisDB>
+	<ReisDB id="46">
+		<terminal transport="US-TX">Fort Worth Alliance Airport</terminal>
+		<Total_value>11</Total_value>
+		<info>
+			<sihtkoht>USA</sihtkoht>
+			<algus>2025-09-21T00:00:00</algus>
+			<lopp>2025-02-18T00:00:00</lopp>
+		</info>
+	</ReisDB>
+	<ReisDB id="47">
+		<terminal transport="ZM-01">Kaoma Airport</terminal>
+		<Total_value>4</Total_value>
+		<info>
+			<sihtkoht>Italy</sihtkoht>
+			<algus>2024-12-06T00:00:00</algus>
+			<lopp>2025-08-19T00:00:00</lopp>
+		</info>
+	</ReisDB>
+	<ReisDB id="48">
+		<terminal transport="BR-PA">Val de Cans/Júlio Cezar Ribeiro International Airport</terminal>
+		<Total_value>40</Total_value>
+		<info>
+			<sihtkoht>Austria</sihtkoht>
+			<algus>2024-10-11T00:00:00</algus>
+			<lopp>2024-11-18T00:00:00</lopp>
+		</info>
+	</ReisDB>
+	<ReisDB id="49">
+		<terminal transport="PF-U-A">Tupai Airport</terminal>
+		<Total_value>30</Total_value>
+		<info>
+			<sihtkoht>USA</sihtkoht>
+			<algus>2024-12-12T00:00:00</algus>
+			<lopp>2024-10-09T00:00:00</lopp>
+		</info>
+	</ReisDB>
+	<ReisDB id="50">
+		<terminal transport="CA-NL">Saglek Airport</terminal>
+		<Total_value>2</Total_value>
+		<info>
+			<sihtkoht>Thailand</sihtkoht>
+			<algus>2025-02-28T00:00:00</algus>
+			<lopp>2024-11-19T00:00:00</lopp>
+		</info>
+	</ReisDB>
+	<ReisDB id="51">
+		<terminal transport="CA-NL">Saglek Airport</terminal>
+		<Total_value>2</Total_value>
+		<info>
+			<sihtkoht>Thailand</sihtkoht>
+			<algus>2025-02-28T00:00:00</algus>
+			<lopp>2024-11-19T00:00:00</lopp>
+		</info>
+	</ReisDB>
+</reisid>
