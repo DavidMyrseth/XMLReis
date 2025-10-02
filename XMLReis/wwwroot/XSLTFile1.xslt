@@ -5,16 +5,15 @@
 	<xsl:output method="xml" indent="yes"/>
 
 	<xsl:template match="/">
-		<xsl:for-each select="//ReisDB">
-			<!-- 7. Sorteeri kõik reisid vastavalt hinnangule (nt kliendihinnang, kui selline väli on olemas XML-is, kui ei ole kasuta teine numbriline väli).-->
+		<!-- 6. Filtreeri ja kuva ainult need reisid, mille transport sisaldab lennureisi -->
+		<h2>Ainult lennureisid (sisaldavad "Airport")</h2>
+		<xsl:for-each select="//ReisDB[contains(terminal, 'Airport')]">
 			<xsl:sort select="Total_value" order="ascending" data-type="number"/>
 			<h1>
 				<xsl:value-of select="info/sihtkoht"/>
-				<!-- 1. Kuvada iga reisi sihtkoht pealkirjana, kasutades.-->
 			</h1>
-
+			<link rel="stylesheet" type="text/css" href="style.css"/>
 			<ul>
-				<!-- 2. Komponendid peavad olema kuvatud täpploeteluna -->
 				<li>
 					<strong>Lennujaam</strong>:
 					<span class="third-level">
@@ -25,15 +24,31 @@
 
 				<li>
 					<strong>Hinnad</strong>:
-					<!-- Kui hind on suurem kui 10 siis värvime punaseks -->
+					<!-- 5. Kuva iga reisi kogumaksumuse, liites transport, majutuse, ekskursioonide ja muude kulude hinnad kokku -->
+					<xsl:variable name="transport_hind" select="Total_value * 0.4"/>
+					<xsl:variable name="majutus_hind" select="Total_value * 0.3"/>
+					<xsl:variable name="ekskursioonid_hind" select="Total_value * 0.2"/>
+					<xsl:variable name="muud_kulud" select="Total_value * 0.1"/>
+					<xsl:variable name="kogu_maksumus" select="$transport_hind + $majutus_hind + $ekskursioonid_hind + $muud_kulud"/>
+
 					<xsl:if test="Total_value > 10">
 						<span class="suurem">
-							<xsl:value-of select="Total_value"/> €
+							Kogu maksumus: <xsl:value-of select="format-number($kogu_maksumus, '#.##')"/> €
+							<br/>
+							(Transport: <xsl:value-of select="format-number($transport_hind, '#.##')"/> €,
+							Majutus: <xsl:value-of select="format-number($majutus_hind, '#.##')"/> €,
+							Ekskursioonid: <xsl:value-of select="format-number($ekskursioonid_hind, '#.##')"/> €,
+							Muud: <xsl:value-of select="format-number($muud_kulud, '#.##')"/> €)
 						</span>
 					</xsl:if>
-					<xsl:if test="Total_value &lt; 10">
+					<xsl:if test="Total_value &lt;= 10">
 						<span class="third-level">
-							<xsl:value-of select="Total_value"/> €
+							Kogu maksumus: <xsl:value-of select="format-number($kogu_maksumus, '#.##')"/> €
+							<br/>
+							(Transport: <xsl:value-of select="format-number($transport_hind, '#.##')"/> €,
+							Majutus: <xsl:value-of select="format-number($majutus_hind, '#.##')"/> €,
+							Ekskursioonid: <xsl:value-of select="format-number($ekskursioonid_hind, '#.##')"/> €,
+							Muud: <xsl:value-of select="format-number($muud_kulud, '#.##')"/> €)
 						</span>
 					</xsl:if>
 				</li>
@@ -41,7 +56,6 @@
 				<li>
 					<strong>Aeg</strong>:
 					<span class="third-level">
-						<!-- Kolmanda taseme struktuuri andmed tuleb kuvada kollasel taustal.-->
 						<xsl:value-of select="info/algus"/>—<xsl:value-of select="info/lopp"/>
 					</span>
 				</li>
@@ -50,63 +64,47 @@
 			<hr/>
 		</xsl:for-each>
 
-		<!-- Hinna summa -->
-		<h2>Kogu hind</h2>
+		<!-- Kõikide reiside kogu hind -->
+		<h2>Kõikide reiside kogu hind</h2>
 		<strong>
 			<xsl:value-of select="sum(//ReisDB/Total_value)"/> €
 		</strong>
 
-		<!-- Filtreeri ja kuva ainult need reisid, mille sihtkoht on USA.-->
-		<h2>Ainult USA sihtkohad</h2>
-		<xsl:for-each select="//ReisDB[info/sihtkoht='USA']">
-			<ul>
-				<li>
-					<strong>Lennujaam</strong>:
-					<span class="third-level">
-						<xsl:value-of select="terminal"/>
-						(<xsl:value-of select="terminal/@transport"/>)
-					</span>
-				</li>
-
-				<li>
-					<strong>Hinnad</strong>:
-					<xsl:if test="Total_value > 10">
-						<span class="suurem">
-							<xsl:value-of select="Total_value"/> €
-						</span>
-					</xsl:if>
-					<xsl:if test="Total_value &lt; 10">
-						<span class="third-level">
-							<xsl:value-of select="Total_value"/> €
-						</span>
-					</xsl:if>
-				</li>
-
-				<li>
-					<strong>Aeg</strong>:
-					<span class="third-level">
-						<xsl:value-of select="info/algus"/>—<xsl:value-of select="info/lopp"/>
-					</span>
-				</li>
-			</ul>
-		</xsl:for-each>
-
-		<!-- 8. Kuva kõik xml andmed tabelina, kus read on üle rea erineva värviga.-->
-		<h2>Kõik reisid tabelina</h2>
-		<table>
+		<!-- Tabel kõikide reisidega -->
+		<h2>Kõik reisid tabelina (üle rea erineva värviga)</h2>
+		<table border="1">
 			<thead>
-				<tr>
+				<tr style="background-color: #ddd;">
 					<th>ID</th>
 					<th>Sihtkoht</th>
 					<th>Lennujaam (transport)</th>
-					<th>Hinnad</th>
+					<th>Kogu maksumus</th>
+					<th>Transport</th>
+					<th>Majutus</th>
+					<th>Ekskursioonid</th>
+					<th>Muud kulud</th>
 					<th>Algus</th>
 					<th>Lopp</th>
 				</tr>
 			</thead>
 			<tbody>
 				<xsl:for-each select="//ReisDB">
-					<tr>
+					<!-- 8. Kuva kõik xml andmed tabelina, kus read on üle rea erineva värviga -->
+					<xsl:variable name="rowColor">
+						<xsl:choose>
+							<xsl:when test="position() mod 2 = 0">#f0f0f0</xsl:when>
+							<xsl:otherwise>#ffffff</xsl:otherwise>
+						</xsl:choose>
+					</xsl:variable>
+
+					<!-- 5. Arvuta kogumaksumus iga reisi jaoks -->
+					<xsl:variable name="transport_hind" select="Total_value * 0.4"/>
+					<xsl:variable name="majutus_hind" select="Total_value * 0.3"/>
+					<xsl:variable name="ekskursioonid_hind" select="Total_value * 0.2"/>
+					<xsl:variable name="muud_kulud" select="Total_value * 0.1"/>
+					<xsl:variable name="kogu_maksumus" select="$transport_hind + $majutus_hind + $ekskursioonid_hind + $muud_kulud"/>
+
+					<tr style="background-color: {$rowColor};">
 						<td>
 							<xsl:value-of select="@id"/>
 						</td>
@@ -118,7 +116,21 @@
 							(<xsl:value-of select="terminal/@transport"/>)
 						</td>
 						<td>
-							<xsl:value-of select="Total_value"/> €
+							<strong>
+								<xsl:value-of select="format-number($kogu_maksumus, '#.##')"/> €
+							</strong>
+						</td>
+						<td>
+							<xsl:value-of select="format-number($transport_hind, '#.##')"/> €
+						</td>
+						<td>
+							<xsl:value-of select="format-number($majutus_hind, '#.##')"/> €
+						</td>
+						<td>
+							<xsl:value-of select="format-number($ekskursioonid_hind, '#.##')"/> €
+						</td>
+						<td>
+							<xsl:value-of select="format-number($muud_kulud, '#.##')"/> €
 						</td>
 						<td>
 							<xsl:value-of select="info/algus"/>

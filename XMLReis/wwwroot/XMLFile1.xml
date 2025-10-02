@@ -28,7 +28,7 @@
 	</ReisDB>
 	<ReisDB id="4">
 		<terminal transport="US-AK">West Point Village Seaplane Base</terminal>
-		<Total_value>1</Total_value>
+		<Total_value>44</Total_value>
 		<info>
 			<sihtkoht>South Korea</sihtkoht>
 			<algus>2024-12-05T00:00:00</algus>
@@ -37,7 +37,7 @@
 	</ReisDB>
 	<ReisDB id="5">
 		<terminal transport="PG-MPL">Aseki Airport</terminal>
-		<Total_value>8</Total_value>
+		<Total_value>100</Total_value>
 		<info>
 			<sihtkoht>USA</sihtkoht>
 			<algus>2025-05-12T00:00:00</algus>
@@ -46,7 +46,7 @@
 	</ReisDB>
 	<ReisDB id="6">
 		<terminal transport="FR-H">Ajaccio-Napoléon Bonaparte Airport</terminal>
-		<Total_value>3</Total_value>
+		<Total_value>222</Total_value>
 		<info>
 			<sihtkoht>USA</sihtkoht>
 			<algus>2025-09-04T00:00:00</algus>
@@ -64,7 +64,7 @@
 	</ReisDB>
 	<ReisDB id="8">
 		<terminal transport="JP-01">Wakkanai Airport</terminal>
-		<Total_value>3</Total_value>
+		<Total_value>30</Total_value>
 		<info>
 			<sihtkoht>France</sihtkoht>
 			<algus>2025-05-06T00:00:00</algus>
@@ -73,7 +73,7 @@
 	</ReisDB>
 	<ReisDB id="9">
 		<terminal transport="AR-Z">Lago Argentino Airport</terminal>
-		<Total_value>4</Total_value>
+		<Total_value>14</Total_value>
 		<info>
 			<sihtkoht>China</sihtkoht>
 			<algus>2025-02-10T00:00:00</algus>
@@ -441,15 +441,6 @@
 		</info>
 	</ReisDB>
 	<ReisDB id="50">
-		<terminal transport="CA-NL">Saglek Airport</terminal>
-		<Total_value>2</Total_value>
-		<info>
-			<sihtkoht>Thailand</sihtkoht>
-			<algus>2025-02-28T00:00:00</algus>
-			<lopp>2024-11-19T00:00:00</lopp>
-		</info>
-	</ReisDB>
-	<ReisDB id="51">
 		<terminal transport="CA-NL">Saglek Airport</terminal>
 		<Total_value>2</Total_value>
 		<info>
